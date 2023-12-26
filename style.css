@@ -61,6 +61,14 @@ header {
     font-weight: 300;
 }
 
+.language img {
+    width: 70px;
+}
+
+.mode img {
+    width: 70px;
+}
+
 .mobile-menu-icon {
     display: none;
 }
