@@ -134,13 +134,18 @@ a:hover {
     row-gap: 5px;
 }
 
+.slide-content {
+    position: relative;
+    margin: 0 40px;
+}
+
 .overlay {
     position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
     top: 0;
-    background-color: #23232e;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(35, 35, 46, 0.8);
     border-radius: 25px 25px 0 25px;
 }
 
@@ -154,6 +159,7 @@ a:hover {
     width: 40px;
     background-color: red;
 }
+
 
 .-name {
     font-size: 18px;
