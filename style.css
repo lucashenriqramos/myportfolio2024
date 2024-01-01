@@ -15,11 +15,6 @@
         --color6dark: #c626f7;
     }
 
-    [datatheme="dark"] {
-        --color5: #000000;
-        --color4: #ffffff;
-    }
-
     body {
         min-height: 100vh;
         background-color: var(--color2);
@@ -29,14 +24,12 @@
         background-color: var(--color1);
         box-shadow: 0px 5px 10px var(--color3);
         display: flex;
-        position: fixed;
-        z-index: 1000;
     }
 
     .nav-bar {
         display: flex;
-        justify-content: space-around;
-        padding: 1.5rem 6rem;
+        justify-content: space-between;
+        padding: 1.5rem 25rem;
         align-items: center;
     }
 

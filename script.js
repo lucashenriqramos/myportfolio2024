@@ -17,26 +17,3 @@ function menuShow() {
         }, 300);
     }
 }
-
-const btnDarkModeToggle = document.getElementById('btn-dark-mode-toggle')
-const themeSystem = localStorage.getItem('themeSystem') || 'light'
-
-btnDarkModeToggle.addEventListener('click', () => {
-    let oldTheme = localStorage.getItem('themeSystem') || 'light'
-    let newTheme = oldTheme == "light" ? "dark" : "light"
-    localStorage.setItem('themeSystem',newTheme)
-    defineCurrentTheme(newTheme)
-})
-
-function defineCurrentTheme(theme){
-    const darkSvg = "img/dark.png"
-    const lightSvg = "img/light.png"
-    if(theme == "light")
-    {
-        btnDarkModeToggle.src = darkSvg
-        return
-    }
-    btnDarkModeToggle.src = lightSvg
-}
-
-defineCurrentTheme(themeSystem)
